@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/ui/navbar";
 import { MainModal } from "@/components/ui/mainmodal";
 import { About } from "@/components/ui/about";
+import { Extra } from "@/components/ui/extra";
+import { Footer } from "@/components/ui/footer";
 import TextType from "@/components/ui/texttype";
 import SoftAurora from "@/components/ui/softaurora";
 
@@ -36,6 +38,8 @@ export default function Home() {
             </div>
             <MainModal/>
         </div>
+        <Extra/>
+        <Footer/>
     </div>
   );
 }
