@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 📖 My Dev Wiki
 
-First, run the development server:
+### Um dicionário pessoal de tecnologias, linguagens e ferramentas do mundo dev.
+
+[![Next.js](https://img.shields.io/badge/Next.js-16.x-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-86%25-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38BDF8?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
+[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-latest-white?style=for-the-badge)](https://ui.shadcn.com/)
+
+</div>
+
+---
+
+## 💡 Sobre o projeto
+
+O **My Dev Wiki** é uma coletânea das definições e explicações de conceitos que aprendi durante minha jornada como desenvolvedor. O objetivo é fixar o aprendizado e compartilhá-lo com outras pessoas de forma simples e organizada.
+
+O projeto está em desenvolvimento ativo — novas linguagens, bibliotecas e ferramentas serão adicionadas ao longo do tempo.
+
+---
+
+## ✨ Funcionalidades
+
+- 📚 Páginas dedicadas para cada tecnologia
+- 🗂️ Carrossel de categorias (Linguagens, Frameworks, Ferramentas)
+- 🎨 Tema escuro com efeitos visuais animados
+- 📱 Interface responsiva
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+| Tecnologia | Descrição |
+|---|---|
+| [Next.js](https://nextjs.org/) | Framework React com App Router |
+| [TypeScript](https://www.typescriptlang.org/) | Tipagem estática |
+| [Tailwind CSS v4](https://tailwindcss.com/) | Estilização utilitária |
+| [shadcn/ui](https://ui.shadcn.com/) | Componentes de UI |
+| [React Bits](https://reactbits.dev/) | Componentes animados |
+
+---
+
+## 🚀 Rodando localmente
+
+**Pré-requisitos:** Node.js 18+ e Yarn instalados.
 
 ```bash
-npm run dev
-# or
+# Clone o repositório
+git clone https://github.com/GabrielCaetano1/My-Dev-Wiki.git
+
+# Entre na pasta do projeto
+cd My-Dev-Wiki
+
+# Instale as dependências
+yarn install
+
+# Inicie o servidor de desenvolvimento
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Estrutura do projeto
 
-## Learn More
+```
+My-Dev-Wiki/
+├── app/                  # Páginas e rotas (Next.js App Router)
+│   ├── globals.css       # Estilos globais e variáveis de tema
+│   ├── layout.tsx        # Layout raiz da aplicação
+│   └── page.tsx          # Página inicial
+├── components/
+│   └── ui/               # Componentes reutilizáveis
+├── public/               # Assets estáticos (ícones, SVGs)
+└── lib/                  # Utilitários
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contribuindo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contribuições são muito bem-vindas! Se quiser sugerir uma tecnologia, corrigir alguma definição ou melhorar o projeto de qualquer forma:
 
-## Deploy on Vercel
+1. Faça um **fork** do repositório
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-tecnologia`)
+3. Commit suas alterações (`git commit -m 'Adiciona página sobre X'`)
+4. Push para a branch (`git push origin feature/nova-tecnologia`)
+5. Abra um **Pull Request**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📬 Contato
+
+<div align="left">
+
+[![GitHub](https://img.shields.io/badge/GitHub-GabrielCaetano1-181717?style=for-the-badge&logo=github)](https://github.com/GabrielCaetano1)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gabriel_Caetano-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/gabriel-caetano)
+
+</div>
+
+---
+
+<div align="center">
+  <sub>Feito com 💛 por Bagriel Cateano.</sub>
+</div>
