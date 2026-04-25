@@ -7,19 +7,19 @@ const categorias = [
     {
         title: "Linguagens de Programação",
         items: [
-            {label: "Python", icon: "/python_logo.svg", href: "/"},
-            {label: "JavaScript", icon: "/javascript_icon.svg", href: "/"},
-            {label: "SQL", icon: "sql_icon.svg", href: "/"},
-            {label: "Placeholder", icon: null, href: "/"}
+            {label: "Python", icon: "/python_logo.svg", href: "/python"},
+            {label: "JavaScript", icon: "/javascript_icon.svg", href: "/javascript"},
+            {label: "SQL", icon: "sql_icon.svg", href: "/sql"},
+            {label: "Placeholder", icon: null, href: "/placeholder"}
         ]
     },
     {
     title: "Bibliotecas & Frameworks",
     items: [
-      { label: "React", icon: null, href: "/" },
-      { label: "Next.js", icon: null, href: "/" },
-      { label: "Tailwind", icon: null, href: "/" },
-      { label: "Placeholder", icon: null, href: "/" },
+      { label: "React", icon: null, href: "/react" },
+      { label: "Next.js", icon: null, href: "/nextjs" },
+      { label: "Tailwind", icon: null, href: "/tailwind" },
+      { label: "Placeholder", icon: null, href: "/placeholder" },
     ]
   }
 ]
@@ -33,13 +33,13 @@ export function MainModal() {
     const categoria = categorias[current]
 
     return (
-        <div className="relative flex justify-center bg-gray-900 opacity-90 w-full">
+        <div className="relative flex justify-center bg-principal/80 gray-900 opacity-90 w-full">
             <div className="flex flex-col items-center rounded-xl overflow-hidden w-150 h-140">
 
                 <div className="w-full flex items-center justify-between px-6 py-4">
-                    <button onClick={prev} className="text-white text-2xl hover:text-principal3  transition-colors">‹</button>
+                    <button onClick={prev} className="text-white text-2xl hover:text-principal3  transition-colors">⟪</button>
                     <h2 className="text-white font-bold text-xl">{categoria.title}</h2>
-                    <button onClick={next} className="text-white text-2xl hover:text-principal2 transition-colors">›</button>
+                    <button onClick={next} className="text-white text-2xl hover:text-principal2 transition-colors">⟫</button>
                 </div>
 
                 <div className="grid grid-cols-2 place-items-center gap-4 flex-1 w-full px-6 pb-6">

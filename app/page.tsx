@@ -19,15 +19,15 @@ export default function Home() {
                 noiseAmplitude={5}
             />
         </div>
-        <Navbar />
-        <div className="flex flex-col items-center justify-center mt-20 gap-4">
+        <Navbar/>
+        <div className="flex flex-col items-center justify-center mt-15 gap-4">
             <div className="flex flex-col items-center justify-center mt-1 m-10 gap-30">
                 <TextType
                     className="text-6xl font-bold "
                     style={{
                         textShadow: '0 0 20px currentColor, 0 0 40px currentColor, 0 0 80px currentColor'
                     }}
-                    text={"Bem vindo ao Meu Dicionário Dev!"}
+                    text={"Bem vindo ao MyDevWiki!"}
                     typingSpeed={75}
                     pauseDuration={15000}
                     showCursor={true}

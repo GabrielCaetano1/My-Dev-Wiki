@@ -1,0 +1,30 @@
+import { codeToHtml } from "shiki";
+
+interface CodeBlockProps {
+    code: string;
+    language?: string;
+}
+
+export async function CodeBlock({code, language = "javascript"}: CodeBlockProps) {
+    const html = await codeToHtml(code, {
+        lang: language,
+        themes: {
+            light: "github-light", 
+            dark: "github-dark" //nord, dracula, one-dark-pro
+        }
+    });
+    return (
+        <div className="relative rounded-xl overflow-hidden border border-white/10 text-sm">
+            <div className="absolute top-3 right-3 bg-principal3 text-white text-xs font-bold px-3 py-1 rounded-lg z-10">
+                {language.toLocaleUpperCase()}
+            </div>
+
+            <div 
+            className="p-6 overflow-x-auto [&>pre]:bg-principal/50! [&>pre]:rounded-xl! [&>pre]:p-6!"
+            dangerouslySetInnerHTML={{ __html: html}}
+            >
+                
+            </div>
+        </div>
+    );
+}
