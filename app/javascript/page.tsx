@@ -3,6 +3,7 @@ import { Navbar } from "@/components/ui/navbar"
 import SoftAurora from "@/components/ui/softaurora"
 import { Footer } from "@/components/ui/footer"
 import { CodeBlock } from "@/components/ui/codeblock"
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 
 export default function JavascriptPage() {
   return (
@@ -20,7 +21,7 @@ export default function JavascriptPage() {
 
       <Navbar  />
 
-      <main className="flex-1 w-full max-w-4xl mx-auto px-6 py-10 flex flex-col gap-10">
+      <main className="flex-1 w-full max-w-7xl mx-auto px-6 py-10 flex flex-col gap-10">
 
         <Link
           href="/"
@@ -72,22 +73,45 @@ export default function JavascriptPage() {
 
         <div className="border-t border-white/10" />
 
-        <div className="flex flex-col gap-6">
-          <CodeBlock
-            language="javascript"
-            code={`function fibonacci(n) {
-  if (n <= 1) return n;
-  return fibonacci(n - 1) + fibonacci(n - 2);
-}`}
-          />
-          <CodeBlock
-            language="javascript"
-            code={`const numbers = [1, 2, 3, 4, 5];
-const doubled = numbers.map(n => n * 2);
-console.log(doubled);`}
-          />
-        </div>
+        <div className="flex border border-white/10 rounded-xl p-2 bg-gray-900/80" >
+            <Tabs defaultValue="cheatsheet">
+                <TabsList className="bg-transparent">
+                <TabsTrigger value="cheatsheet" >Cheatsheet</TabsTrigger>
+                <TabsTrigger value="explicacao">Explicação</TabsTrigger>
+                </TabsList>
 
+                <TabsContent value="cheatsheet">
+                    <h1 className="m-2 text-xl font-bold">Pesquisa Rápida:</h1>
+                    <div className="flex">
+                    <CodeBlock
+                        language="javascript"
+                        code={`// Variáveis e Tipos de Dados
+let nome = "João"; // String
+const idade = 30; // Number
+let ativo = true; // Boolean
+let lista = [1, 2, 3]; // Array
+let pessoa = { nome: "Maria", idade: 25 }; // Object`}
+                        />
+                    <CodeBlock
+                        language="javascript"
+                        code={`// Funções
+function saudacao(nome) {
+    return "Olá, " + nome + "!";
+}`}/>
+                    <CodeBlock
+                        language="javascript"
+                        code=""/>
+
+                    </div>
+                </TabsContent>
+
+                <TabsContent value="explicacao">
+                    <p>Explicação sobre JavaScript</p>
+                    
+                </TabsContent>
+
+            </Tabs>
+        </div>
       </main>
 
       <Footer />
