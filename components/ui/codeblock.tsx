@@ -6,11 +6,13 @@ interface CodeBlockProps {
 }
 
 export async function CodeBlock({code, language = "javascript"}: CodeBlockProps) {
-    const html = await codeToHtml(code, {
+    const dedentedCode = code.replace(/^\s+/gm, "");
+
+    const html = await codeToHtml(dedentedCode, {
         lang: language,
         themes: {
-            light: "github-dark", 
-            dark: "github-light" //nord, dracula, one-dark-pro
+            light: "nord", //github-dark, nord, dracula, one-dark-pro
+            dark: "github-light" //nord, dracula, one-light-pro
         }
     });
     return (
@@ -20,7 +22,7 @@ export async function CodeBlock({code, language = "javascript"}: CodeBlockProps)
             </div>
 
             <div 
-            className="p-6   overflow-x-auto [&>pre]:bg-principal/50! [&>pre]:rounded-xl! [&>pre]:p-6!"
+            className="p-6 min-h-100 overflow-x-auto [&>pre]:bg-principal/50! [&>pre]:rounded-xl! [&>pre]:p-6!"
             dangerouslySetInnerHTML={{ __html: html}}
             >
                 

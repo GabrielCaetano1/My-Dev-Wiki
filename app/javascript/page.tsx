@@ -82,26 +82,50 @@ export default function JavascriptPage() {
 
                 <TabsContent value="cheatsheet">
                     <h1 className="m-2 text-xl font-bold">Pesquisa Rápida:</h1>
-                    <div className="flex">
-                    <CodeBlock
-                        language="javascript"
-                        code={`// Variáveis e Tipos de Dados
-let nome = "João"; // String
-const idade = 30; // Number
-let ativo = true; // Boolean
-let lista = [1, 2, 3]; // Array
-let pessoa = { nome: "Maria", idade: 25 }; // Object`}
-                        />
-                    <CodeBlock
-                        language="javascript"
-                        code={`// Funções
-function saudacao(nome) {
-    return "Olá, " + nome + "!";
-}`}/>
-                    <CodeBlock
-                        language="javascript"
-                        code=""/>
+                    <div className="flex flex-col gap-1 ">
+                      <CodeBlock
+                          language="javascript"
+                          code={`// Variáveis e Tipos de Dados
+                                  let nome = "João"; // String
+                                  let idade = 30; // Number
+                                  let ativo = true; // Boolean
+                                  let lista = [1, 2, 3]; // Array
+                                  let pessoa = { nome: "Maria", idade: 25 }; // Object`
+                              }/>
+                      <CodeBlock
+                          language="javascript"
+                          code={`// Função tradicional
+                                  function saudacao(nome) {
+                                  return "Olá, " + nome + "!";
+                                  }
 
+                                  // Função de seta (Arrow Function)
+                                  const soma = (a, b) => {
+                                  return a + b;
+                                  };
+
+                                  // Função Assíncrona
+                                  async function fetchData() {
+                                  const response = await fetch('/api/data');
+                                  return response.json();
+                                  }`
+                            }/>
+                      <CodeBlock
+                          language="javascript"
+                          code={` // Condicional
+                                  if (idade >= 18) {
+                                  console.log("Adulto");
+                                  } else {
+                                  console.log("Menor de idade");
+                                  }`
+                          }/>
+                      <CodeBlock
+                          language="javascript"
+                          code={` // Loop
+                                  for (let i = 0; i < lista.length; i++) {
+                                  console.log(lista[i]);
+                                  }`
+                          }/>
                     </div>
                 </TabsContent>
 
