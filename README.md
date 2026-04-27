@@ -39,6 +39,7 @@ O projeto está em desenvolvimento ativo — novas linguagens, bibliotecas e fer
 | [Tailwind CSS v4](https://tailwindcss.com/) | Estilização utilitária |
 | [shadcn/ui](https://ui.shadcn.com/) | Componentes de UI |
 | [React Bits](https://reactbits.dev/) | Componentes animados |
+| [Shiki](https://shiki.style/) | Blocos de Código |
 
 ---
 
