@@ -8,7 +8,7 @@ interface CodeBlockProps {
 export async function CodeBlock({code, language = "javascript"}: CodeBlockProps) {
     const dedentedCode = code.replace(/^\s+/gm, "");
 
-    const html = await codeToHtml(dedentedCode, {
+    const html = await codeToHtml(code, {
         lang: language,
         themes: {
             light: "nord", //github-dark, nord, dracula, one-dark-pro
@@ -22,7 +22,7 @@ export async function CodeBlock({code, language = "javascript"}: CodeBlockProps)
             </div>
 
             <div 
-            className="p-6 min-h-100 overflow-x-auto [&>pre]:bg-principal/50! [&>pre]:rounded-xl! [&>pre]:p-6!"
+            className="p-6 min-w-70 overflow-x-auto [&>pre]:bg-principal/50! [&>pre]:rounded-xl! [&>pre]:p-6!"
             dangerouslySetInnerHTML={{ __html: html}}
             >
                 
