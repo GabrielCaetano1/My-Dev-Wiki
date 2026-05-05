@@ -1,10 +1,10 @@
-import Link from "next/link"
-import { Navbar } from "@/components/ui/navbar"
-import SoftAurora from "@/components/ui/softaurora"
-import { Footer } from "@/components/ui/footer"
+import { Extra } from "@/components/extra"
+import { Footer } from "@/components/footer"
+import { Navbar } from "@/components/navbar"
 import { CodeBlock } from "@/components/ui/codeblock"
-import { Extra } from "@/components/ui/extra"
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
+import SoftAurora from "@/components/ui/softaurora"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import Link from "next/link"
 
 export default function JavascriptPage() {
   return (
@@ -55,7 +55,7 @@ export default function JavascriptPage() {
                 </span>
               ))}
             </div>
-            
+
           </div>
         </div>
 
@@ -91,7 +91,7 @@ const z = 30; // Constante (não pode ser reatribuída)`}
 
               <section className="flex flex-col">
                 <h2 className="text-base font-semibold text-muted-foreground  px-7">• Operadores Aritméticos:</h2>
-                <CodeBlock 
+                <CodeBlock
                   language="javascript"
                   BadgeClassName="bg-principal3/70"
                   code={`// Operadores Aritméticos
@@ -142,8 +142,8 @@ async function fetchData() {
 
               <section className="flex flex-col">
                 <h2 className="text-base font-semibold text-muted-foreground px-7">• This:</h2>
-                <CodeBlock 
-                code={`// Exemplo de uso do this
+                <CodeBlock
+                  code={`// Exemplo de uso do this
 const pessoa = {
   nome: "João",
   idade: 30,
@@ -152,7 +152,8 @@ const pessoa = {
   }
 };
 
-pessoa.apresentar();`}/>
+pessoa.apresentar();`} 
+                />
               </section>
 
               <section className="flex flex-col">
@@ -183,7 +184,7 @@ do {
 
               <section className="flex flex-col">
                 <h2 className="text-base font-semibold text-muted-foreground  px-7">• Condicionais:</h2>
-                <CodeBlock 
+                <CodeBlock
                   language="javascript"
                   BadgeClassName="bg-principal3/70"
                   code={`// Estrutura if...else
@@ -218,11 +219,11 @@ const mensagem = idade >= 18 ? "Você é maior de idade." : "Você não é maior
                   <h2>• Tipos de Variáveis:</h2>
                   <p className="font-normal">
                     Em JavaScript, existem três formas de declarar variáveis: <code className="bg-white/10 px-1 rounded">var</code>, <code className="bg-white/10 px-1 rounded">let</code> e <code className="bg-white/10 px-1 rounded">const</code>.
-                    A diferença entre elas está no escopo e na mutabilidade. <code className="bg-white/10 px-1 rounded">var</code> tem escopo de função e pode ser redeclarada, enquanto <code className="bg-white/10 px-1 rounded">let</code> tem escopo de bloco e não pode ser redeclarada. 
+                    A diferença entre elas está no escopo e na mutabilidade. <code className="bg-white/10 px-1 rounded">var</code> tem escopo de função e pode ser redeclarada, enquanto <code className="bg-white/10 px-1 rounded">let</code> tem escopo de bloco e não pode ser redeclarada.
                     Já <code className="bg-white/10 px-1 rounded">const</code> é usada para declarar constantes, ou seja, valores que não podem ser reatribuídos após a inicialização.
                   </p>
                 </div>
-                <CodeBlock 
+                <CodeBlock
                   language="javascript"
                   BadgeClassName="bg-principal3/70"
                   code={`var x = 10; // Variável global ou de função
@@ -239,7 +240,7 @@ const z = 30; // Constante (não pode ser reatribuída)`}
                     Cada tipo tem características específicas e é usado para representar diferentes tipos de informações.
                   </p>
                 </div>
-                <CodeBlock 
+                <CodeBlock
                   language="javascript"
                   BadgeClassName="bg-principal3/70"
                   code={`let nome = "João";                         // String
@@ -249,16 +250,16 @@ let lista = [1, 2, 3];                     // Array
 let pessoa = { nome: "Maria", idade: 25 }; // Object`}
                 />
               </section>
-              
+
               <section>
                 <div className="text-base font-semibold text-muted-foreground px-7">
                   <h2>• Operadores Aritméticos:</h2>
                   <p className="font-normal">
-                    Em JavaScript, os operadores são símbolos que permitem realizar operações em valores e variáveis. 
+                    Em JavaScript, os operadores são símbolos que permitem realizar operações em valores e variáveis.
                     Existem vários tipos de operadores, como operadores aritméticos, de atribuição, lógicos e de comparação.
                   </p>
                 </div>
-                <CodeBlock 
+                <CodeBlock
                   language="javascript"
                   BadgeClassName="bg-principal3/70"
                   code={`// Operadores Aritméticos
@@ -290,12 +291,12 @@ let i = 5 < 3; // false`}
                 <div className="text-base font-semibold text-muted-foreground px-7">
                   <h2>• Funções:</h2>
                   <p className="font-normal">
-                    Em JavaScript, as funções são blocos de código reutilizáveis que realizam uma tarefa específica. 
-                    Elas podem ser declaradas de várias formas, como funções tradicionais, arrow functions e funções assíncronas. 
+                    Em JavaScript, as funções são blocos de código reutilizáveis que realizam uma tarefa específica.
+                    Elas podem ser declaradas de várias formas, como funções tradicionais, arrow functions e funções assíncronas.
                     A diferença entre elas está na sintaxe e no comportamento do <code className="bg-white/10 px-1 rounded">this</code>.
                   </p>
                 </div>
-                <CodeBlock 
+                <CodeBlock
                   language="javascript"
                   BadgeClassName="bg-principal3/70"
                   code={`// Função tradicional
@@ -321,11 +322,11 @@ async function buscarDados() {
                 <div className="text-base font-semibold text-muted-foreground px-7">
                   <h2>• This:</h2>
                   <p className="font-normal">
-                    O operador <code className="bg-white/10 px-1 rounded">this</code> refere-se ao objeto que está chamando o método. Seu valor pode variar dependendo do contexto em que é usado. 
+                    O operador <code className="bg-white/10 px-1 rounded">this</code> refere-se ao objeto que está chamando o método. Seu valor pode variar dependendo do contexto em que é usado.
                     Em funções tradicionais, <code className="bg-white/10 px-1 rounded">this</code> se refere ao objeto que chamou a função, enquanto em arrow functions, <code className="bg-white/10 px-1 rounded">this</code> é léxico e se refere ao contexto onde a função foi definida.
                   </p>
                 </div>
-                  <CodeBlock 
+                <CodeBlock
                   language="javascript"
                   BadgeClassName="bg-principal3/70"
                   code={`// Exemplo de uso do this
@@ -345,11 +346,11 @@ pessoa.apresentar();`}
                 <div className="text-base font-semibold text-muted-foreground px-7">
                   <h2>• Laços de Repetição:</h2>
                   <p className="font-normal">
-                    Em JavaScript, os laços de repetição permitem executar um bloco de código várias vezes. 
+                    Em JavaScript, os laços de repetição permitem executar um bloco de código várias vezes.
                     Os principais tipos são <code className="bg-white/10 px-1 rounded">for</code>, <code className="bg-white/10 px-1 rounded">while</code> e <code className="bg-white/10 px-1 rounded">do...while</code>.
                   </p>
                 </div>
-                <CodeBlock 
+                <CodeBlock
                   language="javascript"
                   BadgeClassName="bg-principal3/70"
                   code={`// Laço for
@@ -381,7 +382,7 @@ do {
                     As principais estruturas são <code className="bg-white/10 px-1 rounded">if...else</code>, <code className="bg-white/10 px-1 rounded">switch</code> e o operador ternário.
                   </p>
                 </div>
-                <CodeBlock 
+                <CodeBlock
                   language="javascript"
                   BadgeClassName="bg-principal3/70"
                   code={`// Estrutura if...else
@@ -407,7 +408,7 @@ switch (dia) {
 const mensagem = idade >= 18 ? "Você é maior de idade." : "Você não é maior de idade.";`}
                 />
               </section>
-              
+
             </TabsContent>
 
           </Tabs>

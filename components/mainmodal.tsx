@@ -1,25 +1,28 @@
 "use client"
-import LetterGlitch from "./letterglitch"
 import { useState } from "react"
 import Link from "next/link"
 
 const categorias = [
     {
-        title: "Linguagens de Programação",
+        title: "Linguagens de Programação e Marcação",
         items: [
             {label: "Python", icon: "/python_logo.svg", href: "/python"},
             {label: "JavaScript", icon: "/javascript_icon.svg", href: "/javascript"},
-            {label: "SQL", icon: "sql_icon.svg", href: "/sql"},
-            {label: "Placeholder", icon: null, href: "/placeholder"}
+            {label: "Typescript", icon: "/typescript_icon.svg", href: "/typescript"},
+            {label: "SQL", icon: "/sql_icon.svg", href: "/sql"},
+            {label: "HTML", icon: "/html_icon.svg", href: "/html"},
+            {label: "CSS", icon: "/css_icon.svg", href: "/css"}
         ]
     },
     {
     title: "Bibliotecas & Frameworks",
     items: [
-      { label: "React", icon: null, href: "/react" },
-      { label: "Next.js", icon: null, href: "/nextjs" },
-      { label: "Tailwind", icon: null, href: "/tailwind" },
-      { label: "Placeholder", icon: null, href: "/placeholder" },
+      { label: "React", icon: "/react_icon.svg", href: "/react" },
+      { label: "Next.js", icon: "/next_icon.svg", href: "/nextjs" },
+      { label: "Tailwind", icon: "/tailwind_icon.svg", href: "/tailwind" },
+      { label: "Pandas", icon: null, href: "/pandas" },
+      {label: "Django", icon: null, href: "/django"},
+      {label: "Flask", icon: null, href: "/flask"}
     ]
   }
 ]
@@ -34,7 +37,7 @@ export function MainModal() {
 
     return (
         <div className="relative flex justify-center bg-principal/80 gray-900 opacity-90 w-full">
-            <div className="flex flex-col items-center rounded-xl overflow-hidden w-150 h-140">
+            <div className="flex flex-col items-center rounded-xl overflow-hidden w-300 h-140">
 
                 <div className="w-full flex items-center justify-between px-6 py-4">
                     <button onClick={prev} className="text-white text-2xl hover:text-principal3  transition-colors">⟪</button>
@@ -42,7 +45,7 @@ export function MainModal() {
                     <button onClick={next} className="text-white text-2xl hover:text-principal2 transition-colors">⟫</button>
                 </div>
 
-                <div className="grid grid-cols-2 place-items-center gap-4 flex-1 w-full px-6 pb-6">
+                <div className="grid grid-cols-2 lg:grid-cols-3 place-items-center gap-4 flex-1 w-full px-6 pb-6">
                     {categoria.items.map((item) => (
                     <Link
                         key={item.label}
