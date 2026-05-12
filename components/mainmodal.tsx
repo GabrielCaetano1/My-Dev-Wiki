@@ -6,24 +6,37 @@ const categorias = [
     {
         title: "Linguagens de Programação e Marcação",
         items: [
-            {label: "Python", icon: "/python_logo.svg", href: "/python"},
-            {label: "JavaScript", icon: "/javascript_icon.svg", href: "/javascript"},
-            {label: "Typescript", icon: "/typescript_icon.svg", href: "/typescript"},
-            {label: "SQL", icon: "/sql_icon.svg", href: "/sql"},
-            {label: "HTML", icon: "/html_icon.svg", href: "/html"},
-            {label: "CSS", icon: "/css_icon.svg", href: "/css"}
+            { label: "Python", icon: "/python_icon.svg", href: "/python" },
+            { label: "JavaScript", icon: "/javascript_icon.svg", href: "/javascript" },
+            { label: "Typescript", icon: "/typescript_icon.svg", href: "/typescript" },
+            { label: "SQL", icon: "/sql_icon.svg", href: "/sql" },
+            { label: "HTML", icon: "/html_icon.svg", href: "/html" },
+            { label: "CSS", icon: "/css_icon.svg", href: "/css" }
         ]
     },
     {
-    title: "Bibliotecas & Frameworks",
-    items: [
-      { label: "React", icon: "/react_icon.svg", href: "/react" },
-      { label: "Next.js", icon: "/next_icon.svg", href: "/nextjs" },
-      { label: "Tailwind", icon: "/tailwind_icon.svg", href: "/tailwind" },
-      { label: "Pandas", icon: null, href: "/pandas" },
-      {label: "Django", icon: null, href: "/django"},
-      {label: "Flask", icon: null, href: "/flask"}
-    ]
+        title: "Bibliotecas",
+        items: [
+            { label: "Tailwind", icon: "/tailwind_icon.svg", href: "/tailwind" },
+            { label: "Pandas", icon: "/pandas_icon.svg", href: "/pandas" },
+            { label: "Flask", icon: "/flask_icon.svg", href: "/flask" }
+        ]
+  },
+  {
+        title: "Frameworks",
+        items: [
+            { label: "React", icon: "/react_icon.svg", href: "/react" },
+            { label: "Next.js", icon: "/next_icon.svg", href: "/nextjs" },
+            { label: "Django", icon: "/django_icon.svg", href: "/django" },
+        ]
+  },
+  {
+        title: "Ferramentas",
+        items: [
+            { label: "Git", icon: "/git_icon.svg", href: "/git" },
+            { label: "UV", icon: "/uv_icon.svg", href: "/uvpm" },
+            { label: "Yarn", icon: "/yarn_icon.svg", href: "/yarnpm" }
+        ]
   }
 ]
 
