@@ -5,7 +5,7 @@ export function Navbar() {
     <nav className="sticky top-2 left-0 right-0 z-20 bg-principal/80 backdrop-blur-sm text-white flex mx-2 mt-2 justify-between items-center rounded-xl border border-white/10">
       
       <Link href="/" className="flex items-center gap-3 p-4 group">
-        <img src="/placeholder_logo.svg" className="h-12 w-12 transition-transform duration-300 group-hover:rotate-12"/>
+        <img src="/placeholder_icon.svg" className="h-12 w-12 transition-transform duration-300 group-hover:rotate-12"/>
         <span className="text-xl font-bold text-principal2">
           My Dev <span className="text-principal3">Wiki!</span>
         </span>
