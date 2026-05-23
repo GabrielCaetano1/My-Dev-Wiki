@@ -1,8 +1,9 @@
 import { Footer } from "@/components/footer"
 import { Navbar } from "@/components/navbar"
 import { CodeBlock } from "@/components/ui/codeblock"
-import SoftAurora from "@/components/ui/softaurora"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Badge } from "@/components/ui/badge"
+import SoftAurora from "@/components/ui/softaurora"
 import Link from "next/link"
 
 export default function PythonPage() {
@@ -22,16 +23,10 @@ export default function PythonPage() {
                 <div className="flex flex-col gap-4">
 
                     <div className="flex items-center gap-3">
-                        <div className="flex items-center gap-2 bg-gray-800/80 border border-white/10 rounded-lg px-3 py-1">
-                            <img src="/python_logo.svg" alt="Python" className="w-5 h-5" />
-                            <span className="text-sm font-semibold text-white">Python</span>
-                        </div>
-                        <span className="bg-green-600/20 text-green-600 border border-green-600/60 text-xs font-bold px-3 py-1 rounded-full">
-                            EASY
-                        </span>
+                        <img src="./python_icon.svg" alt="Python Icon" className="w-12 h-12" />
+                        <h1 className="text-5xl font-extrabold text-white tracking-tight">Python</h1>
                     </div>
-
-                    <h1 className="text-5xl font-extrabold text-white tracking-tight">Python</h1>
+                    
 
                     <p className="text-lg text-muted-foreground max-w-4xl leading-relaxed">
                         Python é uma linguagem de programação de alto nível, interpretada e de propósito geral, conhecida por sua sintaxe clara e legibilidade.
@@ -41,11 +36,14 @@ export default function PythonPage() {
 
                     <div className="flex flex-col gap-2">
                         <div className="flex items-center gap-2 flex-wrap">
+                            <Badge className="bg-green-600/20 text-green-600 border border-green-600/60 text-xs font-bold px-3 py-1 rounded-full h-7">
+                                Easy
+                            </Badge>
                             {/* <span className="text-muted-foreground">🏷</span> */}
                             {["Python", "Ipynb", "Linguagem de Programação", "Ciência de Dados", "Machine Learning", "IA"].map((tag) => (
-                                <span key={tag} className="text-xs text-muted-foreground bg-gray-800/50 border border-white/10 rounded-md px-2 py-1">
+                                <Badge key={tag} variant="default" className="text-xs text-muted-foreground bg-gray-800/50 border border-white/10 rounded-full px-3 py-1 h-7">
                                     {tag}
-                                </span>
+                                </Badge>
                             ))}
                         </div>
 

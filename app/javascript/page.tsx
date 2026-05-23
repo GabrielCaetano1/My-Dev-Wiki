@@ -2,20 +2,18 @@ import { Extra } from "@/components/extra"
 import { Footer } from "@/components/footer"
 import { Navbar } from "@/components/navbar"
 import { CodeBlock } from "@/components/ui/codeblock"
-import SoftAurora from "@/components/ui/softaurora"
+import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import SoftAurora from "@/components/ui/softaurora"
 import Link from "next/link"
 
 export default function JavascriptPage() {
   return (
     <div className="relative min-h-screen flex flex-col">
-
       <div className="fixed inset-0 -z-10 bg-gray-950">
         <SoftAurora color1="#fbe30c" color2="#009eee" colorSpeed={1} speed={1} noiseAmplitude={5} />
       </div>
-
       <Navbar />
-
       <main className="flex-1 w-full max-w-5xl mx-auto px-6 py-10 flex flex-col gap-8">
 
         <Link href="/" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-white transition-colors w-fit">
@@ -26,16 +24,10 @@ export default function JavascriptPage() {
         <div className="flex flex-col gap-4">
 
           <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2 bg-gray-800/80 border border-white/10 rounded-lg px-3 py-1">
-              <img src="/javascript_icon.svg" alt="JavaScript" className="w-5 h-5" />
-              <span className="text-sm font-semibold text-white">JavaScript</span>
-            </div>
-            <span className="bg-green-600/20 text-green-600 border border-green-600/60 text-xs font-bold px-3 py-1 rounded-full">
-              EASY
-            </span>
+            <img src="./javascript_icon.svg" alt="" className="w-12 h-12"/>
+            <h1 className="text-5xl font-extrabold text-white tracking-tight">JavaScript</h1>
           </div>
 
-          <h1 className="text-5xl font-extrabold text-white tracking-tight">JavaScript</h1>
 
           <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
             JavaScript é uma linguagem de programação interpretada, leve e multiparadigma,
@@ -43,16 +35,14 @@ export default function JavascriptPage() {
           </p>
 
           <div className="flex flex-col gap-2">
-            {/* <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <span>🕐</span>
-              <span>10 min de leitura</span>
-            </div> */}
             <div className="flex items-center gap-2 flex-wrap">
-              {/* <span className="text-muted-foreground">🏷</span> */}
+              <Badge className="bg-green-600/20 text-green-600 border border-green-600/60 text-xs font-bold px-3 py-1 rounded-full h-7">
+              EASY
+              </Badge>
               {["JavaScript", "ES6", "Fundamentos", "Linguagem de Programação"].map((tag) => (
-                <span key={tag} className="text-xs text-muted-foreground bg-gray-800/50 border border-white/10 rounded-md px-2 py-1">
+                <Badge key={tag} variant="default" className="text-xs text-muted-foreground bg-gray-800/50 border border-white/10 rounded-full px-3 py-1 h-7">
                   {tag}
-                </span>
+                </Badge>
               ))}
             </div>
 

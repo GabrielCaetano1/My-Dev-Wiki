@@ -5,17 +5,16 @@ export function Footer() {
     <footer className="w-full border-t border-white/10 bg-principal/80 backdrop-blur-sm">
       <div className="max-w-5xl mx-auto px-6 py-10 grid grid-cols-3 gap-8">
 
-        {/* Logo e nome */}
         <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-2">
-            <img src="/placeholder_icon.svg" alt="logo" className="w-10 h-10" />
-            <span className="font-bold text-principal2">
-              My Dev <span className="text-principal3">Wiki!</span>
-            </span>
-          </div>
-          <p className="text-xs text-muted-foreground leading-relaxed">
+            <div className="flex items-center gap-2">
+                <img src="/placeholder_icon.svg" alt="logo" className="w-10 h-10" />
+                <span className="font-bold text-principal2">
+                    My Dev <span className="text-principal3">Wiki!</span>
+                </span>
+            </div>
+            <p className="text-xs text-muted-foreground leading-relaxed">
             Um dicionário pessoal de tecnologias, linguagens e ferramentas do mundo dev.
-          </p>
+            </p>
         </div>
 
         
