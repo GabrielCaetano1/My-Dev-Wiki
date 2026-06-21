@@ -49,7 +49,7 @@ export function MainModal() {
     const categoria = categorias[current]
 
     return (
-        <div className="relative flex justify-center bg-principal/80 gray-900 opacity-90 w-full">
+        <div className="relative flex justify-center bg-principal/80 gray-900 opacity-98 w-full">
             <div className="flex flex-col items-center rounded-xl overflow-hidden w-300 h-140">
 
                 <div className="w-full flex items-center justify-between px-6 py-4">

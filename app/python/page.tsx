@@ -3,6 +3,7 @@ import { Navbar } from "@/components/navbar"
 import { CodeBlock } from "@/components/ui/codeblock"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
+import { RelatedContent } from "@/components/related"
 import SoftAurora from "@/components/ui/softaurora"
 import Link from "next/link"
 
@@ -273,8 +274,8 @@ count += 1
 
                     </Tabs>
                 </div>
-
             </main>
+            <RelatedContent />
             <Footer />
         </div>
     )

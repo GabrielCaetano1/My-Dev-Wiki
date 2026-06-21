@@ -4,6 +4,7 @@ import { Navbar } from "@/components/navbar"
 import { CodeBlock } from "@/components/ui/codeblock"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { RelatedContent } from "@/components/related"
 import SoftAurora from "@/components/ui/softaurora"
 import Link from "next/link"
 
@@ -405,7 +406,7 @@ const mensagem = idade >= 18 ? "Você é maior de idade." : "Você não é maior
         </div>
 
       </main>
-      <Extra />
+      <RelatedContent/>
 
       <Footer />
     </div>
